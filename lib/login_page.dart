@@ -30,17 +30,17 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueGrey[50], // Warna background yang soft
+      backgroundColor: Colors.blueGrey[50], 
       body: Center(
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: 24.0),
           child: Card(
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-            elevation: 6, // Efek shadow
+            elevation: 6, 
             child: Padding(
               padding: EdgeInsets.all(24.0),
               child: Column(
-                mainAxisSize: MainAxisSize.min, // Agar ukuran pas dengan konten
+                mainAxisSize: MainAxisSize.min, 
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   /// **Logo**
@@ -51,7 +51,7 @@ class _LoginPageState extends State<LoginPage> {
 
                   SizedBox(height: 20),
 
-                  /// **Judul**
+                  
                   Text(
                     'Login',
                     style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.blueGrey[700]),
@@ -59,7 +59,7 @@ class _LoginPageState extends State<LoginPage> {
 
                   SizedBox(height: 20),
 
-                  /// **Field Username**
+                 
                   TextField(
                     controller: _usernameController,
                     decoration: InputDecoration(
@@ -71,7 +71,7 @@ class _LoginPageState extends State<LoginPage> {
 
                   SizedBox(height: 12),
 
-                  /// **Field Password**
+                 
                   TextField(
                     controller: _passwordController,
                     obscureText: _obscurePassword,
@@ -92,7 +92,7 @@ class _LoginPageState extends State<LoginPage> {
 
                   SizedBox(height: 20),
 
-                  /// **Tombol Login**
+                  
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
